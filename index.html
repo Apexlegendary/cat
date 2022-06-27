@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="JS" href="/java.js">
+    <title>Document</title>
+
+    <script src="/java.js"></script>
+
+  </head>
+
+  
+  <body> 
+    <section class="wrapper">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+          <form action="/action_page.php" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your dog's name..." required>
+
+              <p>What is your dog's gender?</p>
+                <input type="radio" id="male" name="dog-gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="dog-gender" value="female">
+                <label for="female">Female</label><br>
+
+              <p>What is your dog's age?</p>
+                <input type="number" id="age" name="age">
+
+              <p>Choose your breed</p>
+                <select name="breed" id="breed">
+                <option value="labrador-retriever">Labrador Retriever</option>
+                <option value="bulldog">Bulldog</option>
+                <option value="french-bulldog">French Bulldog</option>
+                <option value="german-shepherd">German Sheperd</option>
+                <option value="pug">Pug</option>
+                <option value="golden-retriever">Golden Retriever</option>
+                <option value="rottweiler">Rottweiler</option>
+                <option value="finnish-lapphund">Finnish Lapphund</option>
+              </select>
+              <p>Is your dog...</p>
+
+                <input type="checkbox" id="neutered" name="neutered" value="neutered" unchecked>
+                <label for="checkbox">Neutered/Spayed</label><br>
+                <input type="checkbox" id="chipped" name="chipped" value="chipped" unchecked>
+                <label for="checkbox">Chipped</label><br>
+
+              <p>What is your dog's weight?</p>
+
+                <input type="number" id="weight" name="weight">
+              <p>CALENDER</p>
+
+                <input type="date" id="date" name="date"><br>
+            
+              
+          </form>
+
+          <button onclick="savepet()">clickkkkkk</button>
+          <p id="demo"></p>
+      </div>
+  </section>
+  </body>
+</html>

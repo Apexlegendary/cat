@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <script src="script.js" type="text/javascript" defer></script>
+  <title>Document</title>
+</head>
+<body>
+    
+    <section class="wrapper">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <div class="title-image">
+      <h1 id="title">The KOM Rescue Shelter</h1>
+  </div>
+    <section id="detail-form">
+      <div class="container">
+          <form action="/action_page.php" method="post">
+            <fieldset>
+              <legend>Dog's Details</legend>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your dog's name..." required>
+              <p>
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+              </p>
+              <p>Age</p>
+                <input type="number" id="age" name="age">
+              <p>What is your dog's weight?</p>
+                <input id="weight" type="number">
+                <p>Choose your breed</p>
+                <select name="breed" id="breed">
+                <option value="labrador-retriever">Labrador Retriever</option>
+                <option value="bulldog">Bulldog</option>
+                <option value="french-bulldog">French Bulldog</option>
+                <option value="german-shepherd">German Sheperd</option>
+                <option value="pug">Pug</option>
+                <option value="golden-retriever">Golden Retriever</option>
+                <option value="rottweiler">Rottweiler</option>
+                <option value="finnish-lapphund">Finnish Lapphund</option>
+              </select>
+            </fieldset>
+          </form>
+      </div>
+      
+  </section>
+  <button onclick="saveDog()" id="save">Save</button>
+  <hr>
+  </body>
+</html>
+</body>
+</html>
